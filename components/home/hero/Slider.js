@@ -6,14 +6,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+import SwiperCore, {
+  Autoplay,
+  EffectFade,
+  Pagination,
+  Navigation,
+} from "swiper";
 
 // install Swiper modules
-SwiperCore.use([Autoplay, Pagination, Navigation]);
+SwiperCore.use([Autoplay, EffectFade, Pagination, Navigation]);
 
 const Slider = () => {
   return (
@@ -21,11 +27,11 @@ const Slider = () => {
       <styled.SwipperContainer>
         <Swiper
           spaceBetween={30}
-          centeredSlides={true}
-          slidesPerView={1}
+          // centeredSlides={true}
+          effect={"fade"}
           loop={true}
           autoplay={{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           pagination={{
