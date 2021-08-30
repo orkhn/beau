@@ -35,8 +35,7 @@ export const Nav = styled.nav`
   width: 80%;
   border-bottom: 0.3rem solid #000;
   margin: 0 auto;
-  padding: 1rem 0;
-  padding-top: 2rem;
+  padding: 1.5rem 0 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,14 +63,14 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     position: relative;
     margin-right: 1rem;
-    width: 20rem;
+    width: 18rem;
     height: 4rem;
   }
 `;
 
 export const MenuItem = styled.div`
-  height: 100%;
-  width: 4rem;
+  height: 90%;
+  width: 3.5rem;
   border-radius: 1rem;
   cursor: pointer;
   background-color: #fff;
