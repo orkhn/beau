@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const SwipperContainer = styled.div`
-  width: 90rem;
-  height: 45rem;
+  width: 65%;
+  height: 100%;
   border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   .swiper {
     width: 100%;
@@ -17,17 +19,8 @@ export const SwipperContainer = styled.div`
     background: #fff;
 
     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
   }
 
